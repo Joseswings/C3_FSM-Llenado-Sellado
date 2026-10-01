@@ -28,6 +28,8 @@ Para resolver este problema de manera estructurada, el sistema se ha factorizado
 ### FSM 1: Controlador Principal (Arquitectura Moore)
 Controla la secuencia general del proceso de la línea de ensamblaje. Al ser una arquitectura de Moore, las salidas del sistema se asocian directamente al estado en el que se encuentra la máquina, garantizando estabilidad en cada etapa mecánica.
 
+[FSM1_Diagram](/IMG/FSM1_diagram.png)
+
 **Estados (4 estados):**
 * **`S0_IDLE` (Espera):** La máquina está detenida o apagada.
 * **`S1_MOVER` (Mover Cinta):** La cinta avanza buscando un envase.
@@ -53,6 +55,8 @@ Controla la secuencia general del proceso de la línea de ensamblaje. Al ser una
 
 ### FSM 2: Controlador de Válvula (Arquitectura Mealy)
 Maneja exclusivamente el flujo de líquido. Al ser una arquitectura de Mealy, la salida depende tanto del estado actual como de la entrada directa del sensor de nivel. Esto permite que la válvula se cierre instantáneamente al detectar que el envase está lleno, sin tener que esperar un ciclo de reloj adicional.
+
+[FSM2_Diagram](/IMG/FSM2_diagram.png)
 
 **Estados (2 estados):**
 * **`V0_CERRADA`:** La válvula está cerrada esperando órdenes de la FSM 1.
