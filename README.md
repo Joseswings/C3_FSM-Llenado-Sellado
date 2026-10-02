@@ -64,8 +64,24 @@ Maneja exclusivamente el flujo de líquido. Al ser una arquitectura de Mealy, la
 
 ## Archivos del Repositorio
 
-* `Mecanismo_Llenado_Sellado.circ`: Archivo fuente simulable en **Logisim Evolution**.
-* `Tablas_FSM_Llenado.xlsx`: Tablas de verdad, transiciones, mapas lógicos y ecuaciones booleanas minimizadas (SOP).
+## Archivos del Repositorio
+
+El proyecto está organizado jerárquicamente para separar el diseño lógico de la implementación física. A continuación se detalla la estructura del repositorio:
+
+```text
+C3_FSM-Llenado-Sellado
+├── README.md                 
+├── 📁 Circuit/                  
+│   ├── C3_top_JoseAlas.circ  
+│   └── README.md             # Explicación de la arquitectura jerárquica del circuito
+├── 📁 DOCS/                     
+│   ├── C3_Jose_Alas.xlsx     
+│   └── README.md             # Documentación de las ecuaciones booleanas minimizadas
+└── 📁 IMG/                      
+    ├── FSM1_diagram.png      
+    └── FSM2_diagram.png      
+```
+
 * [Enlace al Video Explicativo](https://drive.google.com/file/d/1qRHV2ZT8w6uF4EsDcwYhbKOsGq08n9HE/view?usp=sharing)
 
 ## Instrucciones de Simulación
