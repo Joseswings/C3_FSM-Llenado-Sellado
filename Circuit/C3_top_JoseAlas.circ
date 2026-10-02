@@ -63,8 +63,12 @@
       <a name="label" val="Valvula"/>
       <a name="type" val="output"/>
     </comp>
-    <comp lib="0" loc="(150,440)" name="Clock">
+    <comp lib="0" loc="(160,490)" name="Clock">
       <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(180,440)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="CLK"/>
     </comp>
     <comp lib="0" loc="(200,230)" name="Pin">
       <a name="appearance" val="classic"/>
@@ -107,7 +111,7 @@
     <wire from="(1070,230)" to="(1110,230)"/>
     <wire from="(1070,250)" to="(1090,250)"/>
     <wire from="(1090,250)" to="(1090,390)"/>
-    <wire from="(150,440)" to="(210,440)"/>
+    <wire from="(180,440)" to="(210,440)"/>
     <wire from="(200,230)" to="(230,230)"/>
     <wire from="(200,250)" to="(230,250)"/>
     <wire from="(200,290)" to="(230,290)"/>
@@ -671,5 +675,50 @@
     <wire from="(650,300)" to="(660,300)"/>
     <wire from="(880,300)" to="(920,300)"/>
     <wire from="(880,320)" to="(920,320)"/>
+  </circuit>
+  <circuit name="TOP">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="TOP"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(290,290)" name="Clock">
+      <a name="appearance" val="NewPins"/>
+    </comp>
+    <comp lib="0" loc="(350,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(350,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(350,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(350,270)" name="Pin">
+      <a name="appearance" val="classic"/>
+    </comp>
+    <comp lib="0" loc="(620,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(620,230)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp lib="0" loc="(620,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="type" val="output"/>
+    </comp>
+    <comp loc="(590,210)" name="main"/>
+    <wire from="(290,290)" to="(370,290)"/>
+    <wire from="(350,210)" to="(370,210)"/>
+    <wire from="(350,230)" to="(370,230)"/>
+    <wire from="(350,250)" to="(370,250)"/>
+    <wire from="(350,270)" to="(370,270)"/>
+    <wire from="(590,210)" to="(620,210)"/>
+    <wire from="(590,230)" to="(620,230)"/>
+    <wire from="(590,250)" to="(620,250)"/>
   </circuit>
 </project>

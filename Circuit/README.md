@@ -17,6 +17,6 @@ Estos circuitos encapsulan los bloques del Nivel 1 y les agregan los **Flip-Flop
 *   `fsm2_block`: Controlador de Válvula (Arquitectura Mealy). Retroalimenta su bit de estado (`V0`) e ingresa los sensores directamente a la lógica de salida para lograr una reacción inmediata.
 
 ### Nivel 3: Top-Level (Sistema Completo)
-Es el circuito principal o *Main*. Aquí se instancian `fsm1_block` y `fsm2_block` interconectándolos entre sí (factorización). 
+Es el circuito principal o *Main* y *TOP*(más simplificado aún). Aquí se instancian `fsm1_block` y `fsm2_block` interconectándolos entre sí (factorización). 
 *   **Interconexión interna:** La señal `Enable_Fill` viaja de FSM 1 a FSM 2, y `Fill_Done` regresa de FSM 2 a FSM 1.
 *   **Mundo Físico:** Aquí se encuentran los pines de entrada interactivos (botones y sensores de la máquina) y los pines de salida (motor, actuador térmico, válvula).
