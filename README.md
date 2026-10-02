@@ -1,5 +1,5 @@
-# C3_FSM-Llenado-Sellado
-# Mecanismo de Llenado y Sellado de Envases (FSM Factorizada)
+# C3_FSM
+# Mecanismo de Llenado y Sellado de Envases
 
 Este repositorio contiene el diseño, simulación y documentación de una Máquina de Estados Finitos (FSM) que controla una línea de embotellado. El proyecto implementa una **arquitectura factorizada** dividida en dos submáquinas interactuantes, aplicando los principios de diseño digital (Moore y Mealy).
 
@@ -66,7 +66,7 @@ Maneja exclusivamente el flujo de líquido. Al ser una arquitectura de Mealy, la
 
 * `Mecanismo_Llenado_Sellado.circ`: Archivo fuente simulable en **Logisim Evolution**.
 * `Tablas_FSM_Llenado.xlsx`: Tablas de verdad, transiciones, mapas lógicos y ecuaciones booleanas minimizadas (SOP).
-* [Enlace al Video Explicativo](https://youtube.com/tu_enlace_aqui)
+* [Enlace al Video Explicativo](https://drive.google.com/file/d/1qRHV2ZT8w6uF4EsDcwYhbKOsGq08n9HE/view?usp=sharing)
 
 ## Instrucciones de Simulación
 
